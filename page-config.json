@@ -41,6 +41,12 @@
         { "projectName": "dice-super-vision", "assetIndex": 0 },
         { "projectName": "frauds-haze", "assetIndex": 0 },
         { "projectName": "frauds-starlight", "assetIndex": 0 }
+    ],
+    "graphic-experimentation": [
+        { "projectName": "graphic-experimentation", "assetIndex": 0 },
+        { "projectName": "graphic-experimentation", "assetIndex": 1 },
+        { "projectName": "graphic-experimentation", "assetIndex": 2 },
+        { "projectName": "graphic-experimentation", "assetIndex": 3 }
     ]
 }
 

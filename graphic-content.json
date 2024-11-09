@@ -455,79 +455,113 @@
     {
         "id": 20,
         "projectName": "the-sook-ep-launch",
-        "title": "Late 90s 'Bury Me' Single Launch",
-        "client": "Late 90s",
-        "description": "fix",
+        "title": "The Sooks EP Launch",
+        "client": "The Sooks",
+        "description": "EP launch event visuals, featuring grunge-inspired textures and bold typography to capture the raw energy of The Sooks’ music.",
         "assets": [
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "EP Launch Poster",
                 "image": "poster.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "The Sooks EP Launch poster with band members performing on a dark grunge background.",
+                "description": "Poster design for The Sooks' EP launch event, showcasing the band's edgy style."
             },
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "Social Media Cover",
                 "image": "cover.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "The Sooks EP Launch social media cover with bold text and textured background.",
+                "description": "Social media cover for promoting The Sooks' EP launch event, with a cohesive design matching the poster."
             }
         ]
     },
-
     {
         "id": 21,
         "projectName": "unbound",
-        "title": "Late 90s 'Bury Me' Single Launch",
-        "client": "Late 90s",
-        "description": "fix",
+        "title": "Late 90s & Indigo Blaze 'Unbound' Tour",
+        "client": "Late 90s x Indigo Blaze",
+        "description": "Promotional artwork for the 'Unbound' tour, featuring a fierce graphic style to reflect the tour's high-energy vibe.",
         "assets": [
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "Tour Poster",
                 "image": "poster.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "Unbound Tour poster with a fierce dog graphic in red and black tones.",
+                "description": "Poster design for the 'Unbound' tour by Late 90s and Indigo Blaze, capturing the raw energy of the event."
             },
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "Banner",
                 "image": "banner.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "Unbound Tour banner with bold red text and a menacing dog graphic.",
+                "description": "Banner design for digital promotions, featuring bold graphics consistent with the tour's edgy theme."
             }
         ]
     },
-
     {
         "id": 22,
         "projectName": "verge-collection-qld-tour",
-        "title": "Late 90s 'Bury Me' Single Launch",
-        "client": "Verge Collections",
-        "description": "fix",
+        "title": "Verge Collection QLD Tour",
+        "client": "Verge Collection",
+        "description": "Tour poster series for Verge Collection’s QLD tour, combining vintage textures with a minimalist color palette.",
         "assets": [
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "Tour Poster",
                 "image": "poster.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "Verge Collection QLD Tour poster with minimalist blue and black design.",
+                "description": "Poster for Verge Collection’s QLD tour, designed with a retro aesthetic and minimal color palette."
             },
             {
-                "assetTitle": "Image 1",
+                "assetTitle": "Tour Banner",
                 "image": "banner.jpg",
-                "description": "T-shirt design for the merch line."
+                "altText": "Verge Collection QLD Tour banner with vintage-inspired typography and blue background.",
+                "description": "Banner design for promoting Verge Collection’s QLD tour, featuring retro textures and typography."
             }
         ]
     },
-
     {
         "id": 23,
         "projectName": "young-and-alive",
-        "title": "Young and Alive",
+        "title": "The Sooks 'Young and Alive' Single Launch",
         "client": "The Sooks",
-        "description": "fix",
+        "description": "Artwork for The Sooks' single launch, featuring vibrant colors and nostalgic textures to reflect the youthful energy of the single.",
+        "assets": [
+            {
+                "assetTitle": "Single Launch Poster",
+                "image": "poster.jpg",
+                "altText": "The Sooks 'Young and Alive' single launch poster with band members on a vibrant background.",
+                "description": "Poster for The Sooks' 'Young and Alive' single launch, featuring a retro, vibrant design."
+            },
+            {
+                "assetTitle": "Social Media Banner",
+                "image": "banner.jpg",
+                "altText": "The Sooks 'Young and Alive' social media banner with colorful, nostalgic design.",
+                "description": "Banner for promoting The Sooks' single launch on social media, matching the poster's retro feel."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "projectName": "graphic-experimentation",
+        "title": "Graphic Experimentation",
+        "client": "Person Project",
+        "description": "Test.",
         "assets": [
             {
                 "assetTitle": "Image 1",
-                "image": "poster.jpg",
-                "description": "T-shirt design for the merch line."
+                "image": "1.jpg",
+                "description": "Test."
             },
             {
-                "assetTitle": "Image 1",
-                "image": "banner.jpg",
-                "description": "T-shirt design for the merch line."
+                "assetTitle": "Image 2",
+                "image": "2.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 3",
+                "image": "3.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 4",
+                "image": "4.jpg",
+                "description": "Test."
             }
         ]
     }

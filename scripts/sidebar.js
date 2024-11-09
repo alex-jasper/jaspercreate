@@ -3,21 +3,29 @@ $(document).ready(function() {
     $("#sidebar").load("sidebar.html", function() {
         // Load a default page
         $('.content').load("pages/home.html", function(response, status, xhr) {
-            if (status == "error") {
+            if (status === "error") {
                 console.log("Error loading default page:", xhr.status, xhr.statusText);
             }
         });
 
         // After loading the sidebar, attach the click event handler to the links
         $('#sidebar').on('click', 'a', function(e) {
-            e.preventDefault(); // Prevent default anchor behavior
             var page = $(this).data('page'); // Get the page from data attribute
+            var href = $(this).attr('href'); // Get the href attribute of the link
 
-            // Check if the page attribute is defined
+            // Check if the link is external (starts with http or https)
+            if (href.startsWith("http://") || href.startsWith("https://")) {
+                // Allow the default anchor behavior for external links
+                return; // Do nothing here; let it behave normally
+            }
+
+            // Prevent default anchor behavior for internal links
+            e.preventDefault();
+
+            // Load the specified page into the main content area if the page attribute is defined
             if (page) {
-                // Load the specified page into the main content area
                 $('.content').load(page, function(response, status, xhr) {
-                    if (status == "error") {
+                    if (status === "error") {
                         console.log("Error loading page:", xhr.status, xhr.statusText);
                     }
                 });

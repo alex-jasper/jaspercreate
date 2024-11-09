@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file if needed -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="path/to/your/external-script.js"></script> <!-- Include your external JavaScript file here -->
   <style>
     /* Reset default margin and padding */
     * {
@@ -48,18 +52,21 @@
 </head>
 <body>
   <div class="home-page">
-      <div><img src="img/bury-me-board.jpg" alt="Bury Me Late 90s Board" class="board"></div>
+      <div><img src="img/bury-me-board.jpg" alt="Bury Me Late 90s Board" class="board" onclick="loadProjectContent('bury-me')"></div>
       <div class="triple">
-          <img src="content/pretty-uglys-tour-of-oz/poster.jpg" alt="Poster 1" class="board">
-          <img src="content/young-and-alive/poster.jpg" alt="Poster 2" class="board">
-          <img src="content/verge-collection-qld-tour/poster.jpg" alt="Poster 3" class="board">
+          <img src="content/pretty-uglys-tour-of-oz/poster.jpg" alt="Poster 1" class="board" onclick="loadProjectContent('pretty-uglys-tour-of-oz')">
+          <img src="content/young-and-alive/poster.jpg" alt="Poster 2" class="board" onclick="loadProjectContent('young-and-alive')">
+          <img src="content/verge-collection-qld-tour/poster.jpg" alt="Poster 3" class="board" onclick="loadProjectContent('verge-collection-qld-tour')">
       </div>
       <div class="triple">
-        <img src="content/honey-im-home/poster1.jpg" alt="Poster 1" class="board">
-        <img src="content/young-and-alive/poster.jpg" alt="Poster 2" class="board">
-        <img src="content/verge-collection-qld-tour/poster.jpg" alt="Poster 3" class="board">
-    </div>
+          <img src="content/honey-im-home/poster1.jpg" alt="Poster 4" class="board" onclick="loadProjectContent('honey-im-home')">
+          <img src="content/king-blue-indi12aug/poster.jpg" alt="Poster 5" class="board" onclick="loadProjectContent('king-blue-indi12aug')">
+          <img src="content/llynots-second-bday/poster.jpg" alt="Poster 6" class="board" onclick="loadProjectContent('llynots-second-bday')">
+      </div>
   </div>
 
+  <div class="content">
+    <!-- Project details will be loaded here -->
+  </div>
 </body>
 </html>

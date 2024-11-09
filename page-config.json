@@ -1,0 +1,46 @@
+{
+    "favourites": [
+        { "projectName": "honey-im-home", "assetIndex": 0 },
+        { "projectName": "bury-me", "assetIndex": 0 },
+        { "projectName": "bury-me", "assetIndex": 1 },
+        { "projectName": "honey-im-home", "assetIndex": 1 },
+        { "projectName": "dice-super-vision", "assetIndex": 0 }
+    ],
+    "recent-works": [
+        { "projectName": "dice-super-vision", "assetIndex": 0 },
+        { "projectName": "honey-im-home", "assetIndex": 1 }
+    ],
+    "merch-design": [
+        { "projectName": "heysohungry-car-merch", "assetIndex": 0 }
+    ],
+    "event-posters": [
+    { "projectName": "absolutely-livid-fest", "assetIndex": 1 },
+    { "projectName": "verge-collection-qld-tour", "assetIndex": 0 },
+    { "projectName": "hectic-big-show", "assetIndex": 0 },
+    { "projectName": "young-and-alive", "assetIndex": 0 },
+    { "projectName": "pretty-uglys-tour-of-oz", "assetIndex": 0 },
+    { "projectName": "llynot-second-bday", "assetIndex": 0 },
+    { "projectName": "bury-me", "assetIndex": 0 },
+    { "projectName": "king-blue-indi12aug", "assetIndex": 0 },
+    { "projectName": "honey-im-home", "assetIndex": 0 },
+    { "projectName": "king-blue-mojos14april", "assetIndex": 0 },
+    { "projectName": "heysohungry-cold-hands", "assetIndex": 0 },
+    { "projectName": "unbound", "assetIndex": 0 },
+    { "projectName": "late90s-respawn", "assetIndex": 0 },
+    { "projectName": "pphp-nor", "assetIndex": 0 },
+    { "projectName": "rust-fest", "assetIndex": 1 },
+    { "projectName": "king-blue-elgrotto-23june", "assetIndex": 0 },
+    { "projectName": "the-sook-ep-launch", "assetIndex": 0 },
+    { "projectName": "another-rat-vinyl-comp2", "assetIndex": 0 },
+    { "projectName": "pretty-uglys-hallys-bar", "assetIndex": 0 },
+    { "projectName": "punkmas", "assetIndex": 0 },
+    { "projectName": "pphp-tides", "assetIndex": 0 }
+    ],
+
+    "music-cover-art": [
+        { "projectName": "dice-super-vision", "assetIndex": 0 },
+        { "projectName": "frauds-haze", "assetIndex": 0 },
+        { "projectName": "frauds-starlight", "assetIndex": 0 }
+    ]
+}
+

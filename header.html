@@ -1,0 +1,146 @@
+<!-- Logo on the left -->
+<div class="logo">
+    <a href="index.html">
+        <img src="img/logo.png" alt="Logo" />
+    </a>
+</div>
+
+<!-- Right section with search and social links -->
+<div class="rightpart">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchProjects()" />
+        <!-- Search results container, initially hidden -->
+        <div id="searchResults" style="display: none;">
+            <div id="projectContainer"></div>
+        </div>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://www.tiktok.com/@jasper.create" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/jasper.create/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--white-color);
+    border-bottom: solid 8px var(--primary-color);
+    height: 5em;
+}
+
+.rightpart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    padding-top: 8px;
+}
+
+/* Style for the logo */
+.logo img {
+    max-height: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    padding-right: 5px;
+}
+
+/* Style for the social links */
+.social-links a {
+    margin-left: 0.6em;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Ensure the search bar takes up space in the container */
+.search-bar {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.search-container input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 3px solid var(--primary-color); /* Define primary color in your CSS variables */
+    width: 100%; /* Ensures the input takes full width within its container */
+    box-sizing: border-box; /* Ensures padding doesn’t overflow the container */
+    background-color: var(--white-color);
+    color: var(--primary-color); /* Color for user-entered text */
+}
+
+.search-container input[type="text"]::placeholder {
+    color: var(--secondary-color); /* Color for placeholder text */
+    opacity: 0.3;
+}
+
+.search-container {
+    position: relative;
+    margin-left: 20px;
+    width: 100%; 
+}
+/* Styling for the search results container */
+#searchResults {
+    position: absolute;
+    top: calc(100% + 5px); /* Position it right below the search bar */
+    left: 0;
+    width: 100%; /* Adjusts to the full width of the search container */
+    background-color: var(--primary-color);
+    padding: 10px;
+    max-height: 300px; /* Set a max height for scrolling */
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 4px; /* Optional: add rounded corners to the container */
+}
+
+/* Style for each project item in the search results */
+#projectContainer .project {
+    padding: 0.8em;
+    border-bottom: 1px solid var(--white-color); /* Adds a bottom border */
+    color: var(--white-color); /* Sets text color */
+    display: flex; /* Align items consistently */
+    align-items: center; /* Center-aligns text vertically */
+}
+
+/* Remove the bottom border for the last item */
+#projectContainer .project:last-child {
+    border-bottom: none !important; /* Ensures the last item has no border */
+}
+
+/* Styling for project titles */
+.project h3 {
+    margin: 0; /* Removes any extra margin around the title */
+    font-size: 1em;
+    color: var(--white-color);
+}
+
+/* Optional styling for project descriptions if needed */
+.project p {
+    margin: 0.3em 0 0;
+    font-size: 0.9em;
+    color: var(--white-color);
+}
+
+/* Change text color on hover */
+.project p:hover {
+    color: var(--secondary-color); /* Change text color on hover */
+}
+
+</style>
+

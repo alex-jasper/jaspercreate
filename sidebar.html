@@ -1,0 +1,116 @@
+<div id="holder">
+<div class="top">
+    <div class="information">
+        <h1>Alexander Jasper</h1>
+        <p1>Visual Designer</p1>
+    </div>
+    
+</div>
+<br>
+<br>
+<br>
+<br>
+<ul>
+    <h1>Creative Work</h1>
+    <li><a href="#" data-page="pages/event-posters.html">Event Posters</a></li>
+    <li><a href="#" data-page="pages/music-cover-art.html">Music Cover Art</a></li>
+    <li><a href="#" data-page="pages/merch-design.html">Merch Design</a></li>
+    <br>
+    <h1>Experimental</h1>
+    <li><a href="#" data-page="pages/graphic-experimentation.html">Graphic Experimentation</a></li>
+    <br>
+    <h1>Other</h1>
+    <li><a href="#" data-page="pages/print-store.html">Print Store</a></li>
+    <li><a href="#" data-page="pages/about.html">About</a></li>
+    <li><a href="#" data-page="pages/contact.html">Contact</a></li>
+    <!-- Add more links as needed -->
+</ul>
+</div>
+
+
+<style>
+#sidebar .top {
+    width: 100%; /* Full width of the parent */
+    position: relative; /* To control positioning of child elements */
+}
+
+#holder {
+    margin-left: 1em;
+}
+
+/* Styling for .information */
+.information {
+    float: left; /* Float to the left */
+}
+
+/* Closed state for the sidebar */
+#sidebar.closed {
+    width: 0%; /* Shrink to a small size when closed */
+}
+
+/* Hide the content inside the sidebar when closed */
+#sidebar.closed .information, 
+#sidebar.closed ul {
+    display: none; /* Hide these elements when sidebar is closed */
+}
+
+
+/* Adjust content width when the sidebar is closed */
+.content {
+    transition: width 0.3s ease;
+    width: 80%; /* Default width */
+}
+
+/************************/
+/* Sidebar text styling */
+/************************/
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul h1 {
+    font-size: 1.2em;
+    padding-bottom: 0.1em;
+    color: var(--white-color);
+}
+
+#sidebar ul li a {
+    display: block;
+    padding-bottom: 0.1em;
+    color: var(--white-color);
+	font-size: 1em;
+    text-decoration: none;
+    transition: border-color 0.2s ease, padding-left 0.2s ease;
+}
+
+#sidebar ul li a:hover {
+    border-left: solid 2px var(--white-color);
+    padding-left: 10px;
+    transition: border-color 0.2s ease, padding-left 0.2s ease;
+}
+
+#sidebar h1 {
+    color: var(--white-color);
+    font-size: 1.6em;
+}
+
+#sidebar p1 {
+    color: var(--white-color);
+    font-size: 1em;
+}
+
+/*********************/
+/* Sidebar animation */
+/*********************/
+
+/* Sliding effect for content */
+#sidebar #holder {
+    transition: transform 0.5s ease;
+}
+
+#sidebar.closed #holder {
+    transform: translateX(-100%); /* Slide all content left */
+}
+
+</style>

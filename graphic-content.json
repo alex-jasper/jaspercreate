@@ -1,0 +1,534 @@
+[
+    {
+        "id": 1,
+        "projectName": "honey-im-home",
+        "title": "Honey I'm Home",
+        "client": "Dear Sunday",
+        "description": "For Dear Sunday’s “Honey I’m Home” Tour, I created a playful series of posters inspired by the original Winnie-the-Pooh characters, now in the public domain. With a nod to Pooh Bear’s love of honey, the designs feature band members in classic, costume-inspired illustrations that tie into the tour's theme. Using a warm, retro color palette and whimsical scenes, the posters capture a nostalgic but modern vibe that aligns with the band’s personality. The result is a memorable, engaging set of visuals that work across digital and print formats.",
+        "assets": [
+            {
+                "assetTitle": "Tour Poster - Full Tour Dates",
+                "image": "poster1.jpg",
+                "description": "Poster for Dear Sunday's 'Honey I'm Home' Tour, featuring full tour dates and a colourful illustration of band members dressed as classic Winnie-the-Pooh characters. The playful design combines nostalgic cartoon elements with a warm sunset background, bringing a retro, whimsical feel to the tour promotion.",
+                "altText": "Dear Sunday tour poster showing full tour dates with a cartoon-style illustration of band members in Winnie-the-Pooh costumes against a sunset backdrop."
+            },
+            {
+                "assetTitle": "East Coast Tour Poster",
+                "image": "poster2.jpg",
+                "description": "Poster for Dear Sunday's 'Honey I'm Home' East Coast Tour dates, featuring the band in a hot air balloon with bright, retro colours and cartoon elements. The design spotlights the remaining tour stops, maintaining the playful, nostalgic theme of the full tour poster while focusing on the East Coast shows.",
+                "altText": "Dear Sunday East Coast tour poster with band members in a hot air balloon, featuring colourful cartoon elements and East Coast tour dates."
+            },
+            {
+                "assetTitle": "Tour Banner",
+                "image": "banner.jpg",
+                "description": "Banner design for Dear Sunday's 'Honey I'm Home' Tour, showcasing band members dressed as Winnie-the-Pooh characters against a cheerful, cartoon-style landscape. The banner highlights the tour’s lighthearted, nostalgic vibe and draws attention with its bright colours and whimsical artwork.",
+                "altText": "Dear Sunday tour banner with band members in Winnie-the-Pooh costumes, set in a cartoon landscape with bright colours and a cheerful vibe."
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "projectName": "absolutely-livid-fest",
+        "title": "Absolutely Livid Fest",
+        "client": "Sprinter",
+        "description": "For Absolutely Livid Fest at Livid Skate Café, I designed a poster that captures the raw, high-energy vibe of the event. The artwork features a bold, tentacled skull character, giving it an edgy, psychedelic feel that fits perfectly with the skate and music scene. Using vibrant colours and a gritty, hand-drawn style, the design draws you into the chaotic energy of the festival. The layout keeps all the event details clear while bringing out that rebellious, underground spirit. This poster sets the tone for a day of music, art, and good vibes.",
+        "assets": [
+            {
+                "assetTitle": "Logo Design",
+                "image": "logo.png",
+                "description": "Logo for Absolutely Livid Fest, featuring bold, distorted text with a textured, hand-drawn feel that reflects the event's edgy and rebellious vibe.",
+                "altText": "Absolutely Livid Fest logo with bold, distorted red text and a textured design."
+            },
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "Main poster for Absolutely Livid Fest, showcasing a psychedelic skull with tentacles, event details, and band lineup. The bold colours and gritty textures capture the festival’s raw, underground energy.",
+                "altText": "Absolutely Livid Fest poster featuring a skull with tentacles, event details, and a bold, gritty design."
+            },
+            {
+                "assetTitle": "Festival Banner",
+                "image": "banner.jpg",
+                "description": "Banner for Absolutely Livid Fest, extending the main poster’s psychedelic theme with a wide layout, featuring the iconic skull and tentacles against a vibrant background.",
+                "altText": "Absolutely Livid Fest banner with a skull and tentacles, extending the festival's psychedelic theme in a wide layout."
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "projectName": "another-rat-vinyl-comp2",
+        "title": "Another Rat Records Vinyl Comp 2",
+        "client": "Another Rat Records",
+        "description": "For the launch of Another Rat Records’ Compilation Vinyl 2, I created a series of posters with a grungy, DIY aesthetic. The design features bold, distressed typography and high-contrast rat imagery, embodying the underground, punk-inspired vibe of the event. The monochromatic colour scheme and gritty textures give it a raw, hand-printed feel, aligning with the record label’s edgy personality. This artwork was used to promote the vinyl launch at Indi Bar on January 14th, with a lineup of local bands to celebrate the release.",
+        "assets": [
+            {
+                "assetTitle": "Launch Poster",
+                "image": "poster.jpg",
+                "description": "Main promotional poster for Another Rat Records' Compilation Vinyl 2 launch, featuring gritty, high-contrast rat imagery and a bold, punk-inspired layout.",
+                "altText": "Another Rat Records poster for Comp Vinyl 2 launch, featuring bold text, rat images, and a grungy, monochromatic style."
+            },
+            {
+                "assetTitle": "Event Banner",
+                "image": "banner.jpg",
+                "description": "Banner design for the Another Rat Records Compilation Vinyl 2 launch, showcasing the same DIY, punk-inspired style with distressed typography and rat-themed graphics.",
+                "altText": "Banner for Another Rat Records vinyl launch with distressed typography and gritty rat illustrations."
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "projectName": "bury-me",
+        "title": "Late 90s 'Bury Me' National Tour",
+        "client": "Late 90s",
+        "description": "For the 'Bury Me' national tour by Late 90s, I created a series of gritty, punk-inspired posters and banners. The design uses distressed textures, bold typography, and a limited colour palette to reflect the raw energy of the band's music and style. Each piece captures the intensity of live performance through high-contrast images of the band in action, adding an underground feel. The project was designed to stand out across both digital and physical formats, promoting shows around Australia.",
+        "assets": [
+            {
+                "assetTitle": "Main Tour Poster",
+                "image": "poster1.jpg",
+                "description": "Primary tour poster for Late 90s' 'Bury Me' tour, featuring bold typography and high-contrast images in blue, yellow, and red for a gritty, punk aesthetic.",
+                "altText": "Main tour poster for Late 90s 'Bury Me' national tour with high-contrast band images and tour dates in bold text."
+            },
+            {
+                "assetTitle": "East Coast Poster",
+                "image": "poster2.jpg",
+                "description": "East Coast-specific poster for Late 90s' 'Bury Me' tour, focusing on shows in Brisbane, Sydney, and Melbourne. The design continues the gritty, high-energy theme.",
+                "altText": "East Coast tour poster for Late 90s 'Bury Me' tour with band images and East Coast tour dates."
+            },
+            {
+                "assetTitle": "WA Shows Poster",
+                "image": "poster3.jpg",
+                "description": "Poster for Western Australia shows on the Late 90s' 'Bury Me' tour, highlighting local performances and maintaining the bold, distressed aesthetic.",
+                "altText": "WA shows poster for Late 90s 'Bury Me' tour with gritty, high-contrast band image and WA tour dates."
+            },
+            {
+                "assetTitle": "Tour Banner",
+                "image": "banner.jpg",
+                "description": "Banner design for Late 90s' 'Bury Me' tour, using a similar high-contrast style with band images and tour information for a cohesive look.",
+                "altText": "Banner for Late 90s 'Bury Me' tour with gritty, punk-style imagery and tour information."
+            }
+        ]
+    },
+
+    {
+        "id": 4,
+        "projectName": "dice-super-vision",
+        "title": "DICE 'Super-Vision' Single Cover",
+        "client": "DICE",
+        "description": "For the single 'Super-Vision' by DICE, I was provided with a photo that I edited to create a double-exposure effect. The black and white portrait, with its blurred and layered look, adds a moody, introspective vibe to the cover, aligning with the tone of the song. The ethereal quality of the edited image enhances the single’s mysterious and reflective atmosphere.",
+        "assets": [
+            {
+                "assetTitle": "Single Cover",
+                "image": "content.jpg",
+                "description": "Cover art for DICE's single 'Super-Vision', featuring an edited black and white portrait with a double-exposure effect for a mysterious, introspective vibe.",
+                "altText": "Cover art for DICE's single 'Super-Vision' with an edited black and white portrait creating a double-exposure effect."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "projectName": "frauds-starlight",
+        "title": "The Frauds 'Starlight' Cover Art",
+        "client": "The Frauds",
+        "description": "For The Frauds' track 'Starlight', I created cover art inspired by night sky visuals. The artwork features a time-lapse effect with star trails, capturing the expansive, dreamy feel of stargazing. A prominent moon and minimalist landscape enhance the surreal atmosphere, making the design both intriguing and reflective of the song's tone.",
+        "assets": [
+            {
+                "assetTitle": "Cover Art",
+                "image": "cover.jpg",
+                "description": "Cover art for The Frauds' single 'Starlight', featuring star trails, a prominent moon, and a surreal landscape for a dreamy, expansive vibe.",
+                "altText": "Cover art for The Frauds' single 'Starlight' with star trails, a large moon, and a surreal night landscape."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "projectName": "frauds-haze",
+        "title": "The Frauds 'Haze' Cover Art",
+        "client": "The Frauds",
+        "description": "The cover art for The Frauds' single 'Haze' presents a surreal desert landscape with vibrant colours. A mix of oversized objects like a guitar, a hot air balloon, and a lifeguard tower adds a playful, dreamlike quality to the scene. The artwork's bold, imaginative style reflects the song's psychedelic influences.",
+        "assets": [
+            {
+                "assetTitle": "Cover Art",
+                "image": "cover.jpg",
+                "description": "Cover art for The Frauds' single 'Haze', featuring a surreal desert landscape with oversized objects and vibrant colours for a psychedelic feel.",
+                "altText": "Cover art for The Frauds' single 'Haze' with a desert landscape, oversized objects, and a vibrant, dreamlike style."
+            }
+        ]
+    },
+
+    {
+        "id": 7,
+        "projectName": "hectic-big-show",
+        "title": "Hectic Big Show Poster",
+        "client": "The Sooks",
+        "description": "Promotional poster for 'Hectic Big Show' featuring The Sooks, set at House of Music and Booze. The gritty, high-contrast aesthetic captures the raw energy of a live performance with an engaging, vintage feel.",
+        "assets": [
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "Poster for 'Hectic Big Show' featuring The Sooks with a textured, vintage-inspired look.",
+                "altText": "Poster for 'Hectic Big Show' featuring The Sooks at House of Music and Booze."
+            },
+            {
+                "assetTitle": "Alternate Banner",
+                "image": "banner.jpg",
+                "description": "Wide banner for 'Hectic Big Show' with a distressed, energetic vibe matching the live concert atmosphere.",
+                "altText": "Banner for 'Hectic Big Show' featuring The Sooks."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "projectName": "heysohungry-car-merch",
+        "title": "Hey So Hungry - Car Illustration",
+        "client": "Hey So Hungry",
+        "description": "Merch design featuring a playful illustration of a vintage truck loaded with daisies, styled with a retro vibe to capture Hey So Hungry's laid-back brand aesthetic.",
+        "assets": [
+            {
+                "assetTitle": "Car Illustration",
+                "image": "cont.jpg",
+                "description": "Retro car illustration with daisies in the back, designed for Hey So Hungry merch.",
+                "altText": "Illustration of a vintage blue truck with daisies in the back and 'Hey So Hungry' in retro font."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "projectName": "heysohungry-cold-hands",
+        "title": "Cold Hands Acoustic Fest",
+        "client": "Hey So Hungry",
+        "description": "Event poster for 'Cold Hands Acoustic Fest,' a cosy, campfire-themed acoustic festival by Hey So Hungry. The illustration captures a warm, rustic vibe with characters gathered around a fire.",
+        "assets": [
+            {
+                "assetTitle": "Festival Poster",
+                "image": "poster.jpg",
+                "description": "Poster for 'Cold Hands Acoustic Fest' featuring illustrations of people around a campfire for a rustic, inviting feel.",
+                "altText": "Poster for 'Cold Hands Acoustic Fest' with illustrated characters by a campfire and festival details."
+            }
+        ]
+    },
+
+    {
+        "id": 10,
+        "projectName": "king-blue-elgrotto-23june",
+        "title": "King Blue El Grotto Show",
+        "client": "Daydream Music Group",
+        "description": "Poster design highlighting event information and lineup.",
+        "assets": [
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "Poster design for King Blue's performance at El Grotto with supporting acts.",
+                "altText": "King Blue event poster for El Grotto show on June 23, featuring Siena Rebelo and Satisfaction Guaranteed."
+            },
+            {
+                "assetTitle": "Secondary Image",
+                "image": "banner.jpg",
+                "description": "Supporting graphic for additional promotion.",
+                "altText": "Promotional graphic for King Blue's event at El Grotto with supporting acts."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "projectName": "king-blue-indi12aug",
+        "title": "King Blue Indian Ocean Hotel Show",
+        "client": "Daydream Music Group",
+        "description": "Poster design for King Blue's show at Indian Ocean Hotel.",
+        "assets": [
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "Event poster featuring King Blue and Sunsick at Indian Ocean Hotel on August 12.",
+                "altText": "King Blue and Sunsick event poster for the show at Indian Ocean Hotel."
+            },
+            {
+                "assetTitle": "Secondary Image",
+                "image": "banner.jpg",
+                "description": "Pixel art graphic for promotional use.",
+                "altText": "Pixel art promotional graphic for King Blue and Sunsick event at Indian Ocean Hotel."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "projectName": "king-blue-mojos14april",
+        "title": "King Blue Mojo's Bar Show",
+        "client": "Daydream Music Group",
+        "description": "Poster design for King Blue's show at Mojo's Bar.",
+        "assets": [
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "King Blue performance poster for Mojo's Bar, featuring Humble Armada and Sprinter.",
+                "altText": "King Blue event poster for Mojo's Bar show on April 14, featuring Humble Armada and Sprinter."
+            },
+            {
+                "assetTitle": "Secondary Image",
+                "image": "banner.jpg",
+                "description": "Promotional graphic for social media and web.",
+                "altText": "Promotional graphic for King Blue's event at Mojo's Bar."
+            }
+        ]
+    },
+
+    {
+        "id": 13,
+        "projectName": "llynots-second-bday",
+        "title": "Lynott's Lounge 2nd Birthday",
+        "client": "Lynott's Lounge",
+        "description": "Poster and banner for Lynott's Lounge 2nd Birthday celebration, highlighting the lineup, event details, and drink specials.",
+        "assets": [
+            {
+                "assetTitle": "Main Poster",
+                "image": "poster.jpg",
+                "description": "Primary event poster featuring Lynott's Lounge 2nd Birthday celebration details.",
+                "altText": "Illustrated poster for Lynott's Lounge 2nd Birthday with a character holding a cake."
+            },
+            {
+                "assetTitle": "Promotional Banner",
+                "image": "banner.jpg",
+                "description": "Secondary promotional banner for Lynott's Lounge 2nd Birthday event.",
+                "altText": "Banner image promoting Lynott's Lounge 2nd Birthday event with party decorations."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "projectName": "pphp-nor",
+        "title": "Pot Plant House Party - NOR WA Single Tour",
+        "client": "Pot Plant House Party",
+        "description": "Series of posters for Pot Plant House Party's NOR WA Single Tour, showcasing various tour locations and dates.",
+        "assets": [
+            {
+                "assetTitle": "Main Tour Poster",
+                "image": "poster.jpg",
+                "description": "Main poster for the NOR WA Single Tour featuring the band and tour details.",
+                "altText": "Group photo of Pot Plant House Party with tour dates listed."
+            },
+            {
+                "assetTitle": "Tour Poster - Six Degrees Albany",
+                "image": "poster2.jpg",
+                "description": "Tour poster specific to the Six Degrees Albany venue.",
+                "altText": "Tour poster for Pot Plant House Party's performance at Six Degrees Albany."
+            },
+            {
+                "assetTitle": "Tour Poster - The River Margaret River",
+                "image": "poster3.jpg",
+                "description": "Tour poster specific to The River Margaret River venue.",
+                "altText": "Tour poster for Pot Plant House Party's performance at The River Margaret River."
+            },
+            {
+                "assetTitle": "Tour Poster - Mojos Fremantle",
+                "image": "poster4.jpg",
+                "description": "Tour poster specific to Mojos Fremantle venue.",
+                "altText": "Tour poster for Pot Plant House Party's performance at Mojos Fremantle."
+            },
+            {
+                "assetTitle": "Promotional Banner",
+                "image": "banner.jpg",
+                "description": "Promotional banner for the NOR WA Single Tour.",
+                "altText": "Banner image promoting Pot Plant House Party's NOR WA Single Tour."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "projectName": "pphp-tides",
+        "title": "Pot Plant House Party - Tides Single Launch",
+        "client": "Pot Plant House Party",
+        "description": "Poster for the Tides Single Launch event featuring Pot Plant House Party with supporting acts.",
+        "assets": [
+            {
+                "assetTitle": "Single Launch Poster",
+                "image": "poster.jpg",
+                "description": "Poster for the Tides Single Launch at Indian Ocean Hotel.",
+                "altText": "Poster for Pot Plant House Party's Tides Single Launch with supporting acts listed."
+            }
+        ]
+    },
+
+    {
+        "id": 16,
+        "projectName": "pretty-uglys-hallys-bar",
+        "title": "Pretty Uglys at Hally's Bar",
+        "client": "Pretty Uglys",
+        "description": "Promotional poster for Pretty Uglys' show at Hally's Bar in Busselton, featuring Bottle and Lines of Conviction.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "Poster design for the event at Hally's Bar.",
+                "altText": "Poster for Pretty Uglys' show at Hally's Bar with support from Bottle and Lines of Conviction on April 14th."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "projectName": "pretty-uglys-tour-of-oz",
+        "title": "Pretty Uglys 'Tour of Oz'",
+        "client": "Pretty Uglys",
+        "description": "Tour posters and banners for Pretty Uglys' Tour of Oz across multiple locations in Australia.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "Poster design for the 'Tour of Oz' featuring tour dates and locations.",
+                "altText": "Poster for Pretty Uglys' Tour of Oz with tour dates and venues listed."
+            },
+            {
+                "assetTitle": "Image 2",
+                "image": "banner.jpg",
+                "description": "Promotional banner for Pretty Uglys' 'Tour of Oz'.",
+                "altText": "Banner for Pretty Uglys' 'Tour of Oz' with band photo and tour dates."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "projectName": "punkmas",
+        "title": "Late 90s End of Year Punkmas",
+        "client": "Late 90s",
+        "description": "Event poster for Late 90s' End of Year Punkmas show featuring Pot Plant House Party, Sixth Avenue, and Rapid.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "Poster design for the End of Year Punkmas event.",
+                "altText": "Poster for Late 90s' End of Year Punkmas show at Indian Ocean Hotel on December 23rd with supporting acts."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "projectName": "rust-fest",
+        "title": "Rust Fest at Rosemount Hotel",
+        "client": "Rust Artist Management",
+        "description": "Poster and promotional materials for Rust Fest featuring Dear Sunday, Late 90s, Spici Water, and Shorehaven.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "logo.png",
+                "description": "Logo for Rust Fest event.",
+                "altText": "Rust Fest logo with rusted, distressed text style."
+            },
+            {
+                "assetTitle": "Image 2",
+                "image": "poster.jpg",
+                "description": "Main poster for Rust Fest at Rosemount Hotel.",
+                "altText": "Poster for Rust Fest at Rosemount Hotel on January 12, 2024, with band line-up and amplifier graphics."
+            },
+            {
+                "assetTitle": "Image 3",
+                "image": "banner.jpg",
+                "description": "Banner for Rust Fest with amplifier graphics and line-up.",
+                "altText": "Banner for Rust Fest at Rosemount Hotel with lineup details and graphic amplifiers."
+            },
+            {
+                "assetTitle": "Still 1",
+                "image": "still1.png",
+                "description": "Stage backdrop still image for Rust Fest.",
+                "altText": "Stage backdrop still for Rust Fest with blue static effect."
+            },
+            {
+                "assetTitle": "Still 2",
+                "image": "still2.png",
+                "description": "Stage backdrop still image for Rust Fest with flames effect.",
+                "altText": "Stage backdrop still for Rust Fest showing logo with red flames effect."
+            },
+            {
+                "assetTitle": "Still 3",
+                "image": "still3.png",
+                "description": "Stage backdrop still image for Rust Fest with glitch effect.",
+                "altText": "Stage backdrop still for Rust Fest showing logo with glitch effect on black background."
+            },
+            {
+                "assetTitle": "Still 4",
+                "image": "still4.png",
+                "description": "Stage backdrop still image for Rust Fest with distorted effect.",
+                "altText": "Stage backdrop still for Rust Fest with Rust Fest logo in red, showing distorted graphics."
+            }
+        ]
+    },
+
+    {
+        "id": 20,
+        "projectName": "the-sook-ep-launch",
+        "title": "Late 90s 'Bury Me' Single Launch",
+        "client": "Late 90s",
+        "description": "fix",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "T-shirt design for the merch line."
+            },
+            {
+                "assetTitle": "Image 1",
+                "image": "cover.jpg",
+                "description": "T-shirt design for the merch line."
+            }
+        ]
+    },
+
+    {
+        "id": 21,
+        "projectName": "unbound",
+        "title": "Late 90s 'Bury Me' Single Launch",
+        "client": "Late 90s",
+        "description": "fix",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "T-shirt design for the merch line."
+            },
+            {
+                "assetTitle": "Image 1",
+                "image": "banner.jpg",
+                "description": "T-shirt design for the merch line."
+            }
+        ]
+    },
+
+    {
+        "id": 22,
+        "projectName": "verge-collection-qld-tour",
+        "title": "Late 90s 'Bury Me' Single Launch",
+        "client": "Verge Collections",
+        "description": "fix",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "T-shirt design for the merch line."
+            },
+            {
+                "assetTitle": "Image 1",
+                "image": "banner.jpg",
+                "description": "T-shirt design for the merch line."
+            }
+        ]
+    },
+
+    {
+        "id": 23,
+        "projectName": "young-and-alive",
+        "title": "Young and Alive",
+        "client": "The Sooks",
+        "description": "fix",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "T-shirt design for the merch line."
+            },
+            {
+                "assetTitle": "Image 1",
+                "image": "banner.jpg",
+                "description": "T-shirt design for the merch line."
+            }
+        ]
+    }
+]

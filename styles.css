@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor:url(http://127.0.0.1:5500/img/cursor.png), auto;
+    cursor:url(http://jasper-create.com/img/cursor.png), auto;
 }
 
 html {
@@ -55,8 +55,8 @@ body p, p1, p2, p3, p4 {
 /* Main container to hold sidebar and content */
 .main-container {
     display: flex;
-
     height: 100vh; /* Full viewport height */
+
     overflow: hidden; /* Prevent the main page from scrolling */
 }
 
@@ -68,6 +68,7 @@ body p, p1, p2, p3, p4 {
     transition: width var(--animation-speed) ease, transform var(--animation-speed) ease;
     width: 20%;
 	background-color: var(--primary-color);
+
     padding-top: 0.5em;
     min-height: 80vh;
     max-height: 100%;

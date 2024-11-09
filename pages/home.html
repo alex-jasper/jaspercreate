@@ -1,1 +1,65 @@
-<p1>HOME PAGE</p1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styling for the main container */
+    .home-page {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Center and size the main image */
+    .home-page > div:first-child {
+        padding-bottom: 10px;
+    }
+
+    .board {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Styling for the triple image container */
+    .triple {
+      display: flex;
+      gap: 10px; /* Add space between images */
+      max-width: 100%;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+
+    .triple img {
+      width: 100%; /* This makes each image fill 1/3 of its container */
+      max-width: 33%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-page">
+      <div><img src="img/bury-me-board.jpg" alt="Bury Me Late 90s Board" class="board"></div>
+      <div class="triple">
+          <img src="content/pretty-uglys-tour-of-oz/poster.jpg" alt="Poster 1" class="board">
+          <img src="content/young-and-alive/poster.jpg" alt="Poster 2" class="board">
+          <img src="content/verge-collection-qld-tour/poster.jpg" alt="Poster 3" class="board">
+      </div>
+      <div class="triple">
+        <img src="content/honey-im-home/poster1.jpg" alt="Poster 1" class="board">
+        <img src="content/young-and-alive/poster.jpg" alt="Poster 2" class="board">
+        <img src="content/verge-collection-qld-tour/poster.jpg" alt="Poster 3" class="board">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file if needed -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="path/to/your/external-script.js"></script> <!-- Include your external JavaScript file here -->
+
   <style>
     /* Reset default margin and padding */
     * {
@@ -21,6 +13,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .home-page img {
+      transform: scale(1); /* Adjust the scale value as needed */
+      transition: transform 0.3s ease; /* Smooth transition */
+    }
+
+    .home-page img:hover {
+      transform: scale(1.02); /* Adjust the scale value as needed */
     }
 
     /* Center and size the main image */
@@ -49,8 +50,7 @@
       height: auto;
     }
   </style>
-</head>
-<body>
+
   <div class="home-page">
       <div><img src="img/bury-me-board.jpg" alt="Bury Me Late 90s Board" class="board" onclick="loadProjectContent('bury-me')"></div>
       <div class="triple">
@@ -68,5 +68,3 @@
   <div class="content">
     <!-- Project details will be loaded here -->
   </div>
-</body>
-</html>

@@ -1,53 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <style>
-    /* Main container with padding and max width */
-    .about-container {
-      display: flex;
-      padding: 20px;
-    }
-
-    /* Style for the image */
-    .profile-img {
-      width: 4em;
-      height: auto;
-      margin: 20px;
-    }
-
-    /* Style for list */
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 5px 0;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="about-container">
-    <img src="img/me.jpg" alt="Profile photo of Alexander" class="profile-img">
-    <div class="info">
-    <h1>About Me</h1>
-    <p>Hello, I'm Alexander 👋</p>
-    <p>I'm a Branding Strategist and Graphic Designer based in Perth, Western Australia. I work with Golden Hotels Pty Ltd, where I manage brand strategy, create and maintain websites, and handle various design aspects for digital and print. I also contribute to social media campaigns, ensuring a cohesive visual identity across platforms.</p>
-
-    <h2>Qualifications & Certifications:</h2>
-    <ul>
-      <li>Diploma in Graphic Design</li>
-      <li>Certificate IV in Graphic Design</li>
-      <li>Adobe Certified - Graphic Design</li>
-      <li>Adobe Certified - Graphic Design & Illustration using Adobe Illustrator</li>
-      <li>Adobe Certified - Visual Design using Adobe Photoshop</li>
-    </ul>
+<div class="about-container">
+    <!-- Left Column with Profile Image -->
+    <div class="left-column">
+      <img src="img/me.jpg" alt="Profile photo of Alexander" class="profile-img">
     </div>
-  </div>
+  
+    <!-- Right Column with Bio and Other Sections -->
+    <div class="right-column">
+      <!-- Bio Section -->
+      <div class="bio-section">
+        <h1>About Me</h1>
+        <p>Hello, I'm Alexander 👋</p>
+        <br>
+        <p>I'm a Branding Strategist and Graphic Designer based in Perth, Western Australia. I work at Golden Hotels - my families hospitality business that own and operates wedding venues, pubs and motels. It's my responsibilty to manage each venues branding, create and maintain their websites, and handle various design aspects for digital and print. I also contribute to social media campaigns across the venues, ensuring a cohesive visual identity across platforms.</p>
+      </div>
+  
+      <!-- Middle Section with Qualifications and Education -->
+      <div class="middle-section">
+        <div class="column">
+          <h2>Qualifications & Certifications</h2>
+          <ul>
+            <li>Diploma in Graphic Design - 2023</li>
+            <li>Certificate IV in Graphic Design - 2022</li>
+            <li>Adobe Certified 2022</li>
+                <ul id="sublist">
+                    <li>Graphic Design</li>
+                    <li>Graphic Design & Illustration using Adobe Illustrator</li>
+                    <li>Visual Design using Adobe Photoshop</li>
+                </ul>
+              <li>High School Diploma [Trinity College East Perth] (2018)</li>
+              <li>CERT IV Business [FEC] (2018)</li>
+          </ul>
+        </div>
+  
+        <div>
+          <h2>Work Experience</h2>
+          <p>(2024 - Current) Branding & Graphic Design at Golden Hotels</p>
+          <p>(2022 - Current) Freelance Designer for Jasper.Create</p>
+        </div>
+      </div>
+  
+      <!-- Work Experience Section -->
+      
 
-</body>
-</html>
+      <!-- Skills Section -->
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <ul>
+          <li><b>Brand & Advertising Design</b>: Expert in creating cohesive, multi-platform campaigns to boost brand visibility and engagement.</li>
+          <li><b>Automated Integrations</b>: Developed seamless event import systems using Python and API integrations, ensuring real-time updates.</li>
+          <li><b>Advanced Web Components</b>: Built custom interactive elements for Squarespace, enhancing functionality and user experience.</li>
+          <li><b>Strategic Social Media Management</b>: Led targeted campaigns across platforms, driving audience engagement and brand growth.</li>
+          <li><b>Portfolio Development</b>: Created advanced web portfolios showcasing dynamic content and custom search functionality.</li>
+          <li><b>Photography & Visual Coordination</b>: Organized and directed professional photoshoots, capturing brand-aligned content.</li>
+          <li><b>Cross-Functional Collaboration</b>: Strong team communicator, promoting effective teamwork across venues and departments.</li>
+          <li><b>Feedback & Skill Development</b>: Skilled in both giving and incorporating feedback to continuously refine work quality.</li>
+        </ul>
+      </div>
+
+      <!-- Personal Projects Section -->
+      <div>
+        <h2>Personal Projects</h2>
+        <p>Cosmic Drift Theory - Music Project</p>
+        <p>Astro - Unity2d Game</p>
+      </div>
+    </div>
+</div>
+
+<style>
+  /* Main container for the entire layout */
+  .about-container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+
+  /* Left Column styling for Profile Image */
+  .left-column {
+    flex: 0 0 200px;
+  }
+
+  .profile-img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  /* Right Column styling */
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Bio section styling */
+  .bio-section {
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+
+  /* Middle section styling for Qualifications and Education */
+  .middle-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Column styling for Qualifications and Education */
+  .column {
+    width: 48%;
+  }
+
+  /* Title and content spacing */
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  p, ul {
+    margin-top: 0;
+  }
+
+  /* Skills section styling */
+  .skills-section {
+    margin-top: 20px;
+  }
+  
+  /* Remove bullet points from list */
+  .skills-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skills-section ul li {
+    margin-bottom: 10px;
+  }
+
+  #sublist ul {
+    margin-left: 5px;
+  }
+
+</style>

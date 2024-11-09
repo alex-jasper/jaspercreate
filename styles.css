@@ -134,7 +134,7 @@ body p, p1, p2, p3, p4 {
 }
 
 .gallery-item img {
-    transition: transform 0.2s ease; /* Smooth transition for the scaling effect */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
 }
 
 /* Scale the image on hover */

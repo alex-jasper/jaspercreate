@@ -258,3 +258,36 @@ body p, p1, p2, p3, p4 {
     font-size: 1em;
     z-index: 10000;
 }
+
+/* PLACEHOLDER IMAGES */
+/* Placeholder style */
+.image-container {
+    position: relative; /* Position relative to hold the placeholder and image */
+    display: inline-block; /* Keep images inline */
+    overflow: hidden; /* Prevent overflow */
+    width: 100%; /* Optional: Adjust to your layout */
+}
+
+.img-placeholder {
+    background-color: rgb(220, 220, 220); /* Grey placeholder */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Images hidden initially */
+img .dynamic-image {
+    display: none;
+    width: 100%; /* Adjust to your container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Fade in loaded images */
+img .dynamic-image.loaded {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}

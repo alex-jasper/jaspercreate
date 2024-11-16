@@ -1,61 +1,59 @@
 function loadGalleryPage(pageName) {
-    // Pages where images should open in a lightbox
     const lightboxPages = ["graphic-experimentation"];
 
-    // Load the page configuration for the specified gallery page
+    // Load page configuration to determine what content to display
     $.getJSON("page-config.json")
         .done(function(pageConfig) {
             var galleryItems = pageConfig[pageName];
 
             if (!galleryItems) {
-                console.log("No content configured for this page.");
+                console.error(`No content configured for page: ${pageName}`);
                 $('.content').html('<p>No items to display.</p>');
                 return;
             }
 
-            // Load the graphic content data
+            // Load graphic content
             $.getJSON("graphic-content.json")
                 .done(function(graphicContent) {
-                    var content = '<div class="gallery">'; // Start the gallery container
+                    var content = '<div class="gallery">';
 
-                    // Loop through each item defined in the page configuration
+                    // Loop through items defined in page-config.json
                     galleryItems.forEach(function(mapping) {
                         var project = graphicContent.find(c => c.projectName === mapping.projectName);
                         if (project && project.assets[mapping.assetIndex]) {
                             var asset = project.assets[mapping.assetIndex];
-                            var fullImagePath = `/content/${project.projectName}/${asset.image}`;
 
-                            // Determine if the image should open a lightbox or load project-view.html
+                            // Generate Imgix URLs
+                            var imageUrl = generateImgixUrl(project.projectName, asset.image, 800); // Medium for gallery
+                            var lightboxUrl = generateImgixUrl(project.projectName, asset.image, 1600); // Large for lightbox
+
+                            // Gallery items with lightbox or project link
                             var isLightbox = lightboxPages.includes(pageName);
                             var linkHtml = isLightbox
-                                ? `<a href="${fullImagePath}" class="lightbox"><img src="${fullImagePath}" alt="${asset.assetTitle}" /></a>`
-                                : `<a href="javascript:void(0);" class="project-link" data-project="${project.projectName}"><img src="${fullImagePath}" alt="${asset.assetTitle}" /></a>`;
+                                ? `<a href="${lightboxUrl}" class="lightbox"><img src="${imageUrl}" alt="${asset.altText}" /></a>`
+                                : `<a href="javascript:void(0);" class="project-link" data-project="${project.projectName}"><img src="${imageUrl}" alt="${asset.altText}" class="dynamic-image"/></a>`;
 
-                            // Generate the HTML for each gallery item
-                            content += `
-                                <div class="gallery-item">
-                                    ${linkHtml}
-                                </div>`;
+                            content += `<div class="gallery-item">${linkHtml}</div>`;
                         }
                     });
 
-                    content += '</div>'; // Close the gallery container
-
-                    // Insert the content into the gallery section of the page
+                    content += '</div>';
                     $('.content').html(content);
 
-                    // Initialize lightbox if needed
+                    addPlaceholders();
+
+                    // Initialize lightbox if applicable
                     if (lightboxPages.includes(pageName) && typeof initLightbox === 'function') {
                         initLightbox();
                     }
                 })
                 .fail(function() {
-                    console.log("Error loading graphic-content.json");
+                    console.error("Error loading graphic-content.json");
                     $('.content').html('<p>Error loading content data.</p>');
                 });
         })
         .fail(function() {
-            console.log("Error loading page-config.json");
+            console.error("Error loading page-config.json");
             $('.content').html('<p>Error loading page configuration.</p>');
         });
 }
@@ -83,6 +81,39 @@ function loadPage(htmlFile) {
             $('.content').html('<p>Error loading content.</p>'); // Display error message in the content area
         } else {
             console.log(`${htmlFile} loaded successfully.`);
+        }
+    });
+}
+
+function addPlaceholders() {
+    const images = document.querySelectorAll('img.dynamic-image');
+
+    images.forEach(image => {
+        // Create a wrapper for the image
+        const wrapper = document.createElement('div');
+        wrapper.className = 'image-container';
+
+        // Create a placeholder
+        const placeholder = document.createElement('div');
+        placeholder.className = 'img-placeholder';
+
+        // Insert the wrapper and move the image inside it
+        image.parentNode.insertBefore(wrapper, image);
+        wrapper.appendChild(placeholder);
+        wrapper.appendChild(image);
+
+        // Listen for the image load event
+        image.addEventListener('load', () => {
+            // Add a slight delay before removing the placeholder (optional for smoother transition)
+            setTimeout(() => {
+                image.classList.add('loaded');
+                placeholder.remove();
+            }, 100); // 100ms delay for smoother effect
+        });
+
+        // If the image is already loaded (cached), trigger the load event manually
+        if (image.complete) {
+            image.dispatchEvent(new Event('load'));
         }
     });
 }

@@ -164,7 +164,7 @@ main.content {
 .img-placeholder {
     background-color: #ccc; /* Neutral background color */
     width: 100%; /* Full width of parent container */
-    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+    aspect-ratio: 4 / 5; /* Maintain aspect ratio */
     animation: pulse 1.5s infinite; /* Add a loading animation */
 }
 

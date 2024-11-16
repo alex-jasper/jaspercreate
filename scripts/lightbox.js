@@ -7,20 +7,20 @@ function initLightbox() {
         // Display the lightbox overlay
         var lightboxHtml = `
             <div class="lightbox-overlay">
-                <img src="${fullImageSrc}" alt="Full Image" />
-                <button class="close-lightbox">Close</button>
+                <img src="${fullImageSrc}" alt="Full Image" class="lightbox-content" />
+                <img src="/img/close.png" alt="Close" class="close-lightbox" />
             </div>`;
         
         $('body').append(lightboxHtml);
 
-        // Close lightbox functionality
+        // Close lightbox functionality when clicking the close image
         $('.close-lightbox').on('click', function() {
             $('.lightbox-overlay').remove();
         });
 
-        // Click outside the image to close the lightbox
+        // Click outside the content to close the lightbox
         $('.lightbox-overlay').on('click', function(e) {
-            if (e.target === this) {
+            if ($(e.target).hasClass('lightbox-overlay')) {
                 $('.lightbox-overlay').remove();
             }
         });

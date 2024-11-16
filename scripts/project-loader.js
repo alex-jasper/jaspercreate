@@ -37,5 +37,40 @@ function loadProjectContent(projectName) {
         } else {
             $('.content').html('<p>Project not found.</p>');
         }
+
+        addPlaceholders();
+    });
+}
+
+function addPlaceholders() {
+    const images = document.querySelectorAll('img.dynamic-image');
+
+    images.forEach(image => {
+        // Create a wrapper for the image
+        const wrapper = document.createElement('div');
+        wrapper.className = 'image-container';
+
+        // Create a placeholder
+        const placeholder = document.createElement('div');
+        placeholder.className = 'img-placeholder';
+
+        // Insert the wrapper and move the image inside it
+        image.parentNode.insertBefore(wrapper, image);
+        wrapper.appendChild(placeholder);
+        wrapper.appendChild(image);
+
+        // Listen for the image load event
+        image.addEventListener('load', () => {
+            // Add a slight delay before removing the placeholder (optional for smoother transition)
+            setTimeout(() => {
+                image.classList.add('loaded');
+                placeholder.remove();
+            }, 100); // 100ms delay for smoother effect
+        });
+
+        // If the image is already loaded (cached), trigger the load event manually
+        if (image.complete) {
+            image.dispatchEvent(new Event('load'));
+        }
     });
 }

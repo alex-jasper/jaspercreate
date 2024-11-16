@@ -50,3 +50,7 @@ function toggleSidebar() {
         hamburger.style.width = "3.5%";
     }
 }
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});

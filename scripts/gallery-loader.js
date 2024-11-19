@@ -1,5 +1,5 @@
 function loadGalleryPage(pageName) {
-    const lightboxPages = ["graphic-experimentation"]; // Pages that open lightbox
+    const lightboxPages = ["graphic-experimentation","event-posters"]; // Pages that open lightbox
 
     $.getJSON("page-config.json", function (pageConfig) {
         const galleryItems = pageConfig[pageName];

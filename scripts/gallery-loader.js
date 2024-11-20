@@ -1,5 +1,5 @@
 function loadGalleryPage(pageName) {
-    const lightboxPages = ["graphic-experimentation","event-posters"]; // Pages that open lightbox
+    const lightboxPages = ["graphic-experimentation","event-posters","music-cover-art"]; // Pages that open lightbox
 
     $.getJSON("page-config.json", function (pageConfig) {
         const galleryItems = pageConfig[pageName];
@@ -23,7 +23,7 @@ function loadGalleryPage(pageName) {
                     const imageUrl = generateImgixUrl(
                         project.projectName,
                         asset.image,
-                        800 // Medium for gallery view
+                        lightboxPages.includes(pageName) ? null : 800 // Use 800px for gallery, max width for lightbox
                     );
 
                     // Determine if the image should open a lightbox or load a project

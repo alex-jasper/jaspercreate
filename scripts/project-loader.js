@@ -31,7 +31,7 @@ function loadProjectContent(projectName) {
 
             project.assets.forEach((asset) => {
                 const imageUrl = generateImgixUrl(project.projectName, asset.image, 800); // Medium size for display
-                const lightboxUrl = generateImgixUrl(project.projectName, asset.image); // High-res for lightbox
+                const lightboxUrl = generateImgixUrl(project.projectName, asset.image, 1600); // High-res for lightbox
 
                 // Add each project asset with a lightbox link
                 content += `

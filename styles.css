@@ -128,7 +128,7 @@ main.content {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    grid-template-columns: repeat(4, 1fr); /* Default: 3 columns */
     gap: 16px; /* Space between items */
     max-width: 100%; /* Ensure it doesn't exceed content width */
     margin: 0 auto; /* Center the gallery */

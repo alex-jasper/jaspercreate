@@ -5,7 +5,7 @@
 :root {
     --primary-color: rgb(0, 150, 255);
     --secondary-color: rgb(42, 45, 65);
-	--white-color: #fff;
+	--white-color: rgb(248, 244, 239);
 	--black-color: rgb(42, 45, 65);
     --font-family-main: "coolvetica", sans-serif;
     --font-weight-book: 400;
@@ -116,7 +116,7 @@ body p, p1, p2, p3, p4 {
 
 main.content {
     min-height: 100vh; /* At least the viewport height */
-    background: url('/img/paper.jpg') no-repeat center center fixed;
+    /*background: url('/img/paper.jpg') no-repeat center center fixed;*/
     background-size: cover; /* Adjust as needed */
     position: relative; /* Ensures other positioning works correctly */
     z-index: 0;
@@ -128,10 +128,17 @@ main.content {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
     gap: 16px; /* Space between items */
-    max-width: 100%; /* Make sure it doesn't exceed the content width */
+    max-width: 100%; /* Ensure it doesn't exceed content width */
     margin: 0 auto; /* Center the gallery */
+}
+
+/* Adjust grid for smaller screens */
+@media (max-width: 768px) { /* Target mobile devices */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    }
 }
 
 /* Styling for each gallery item */

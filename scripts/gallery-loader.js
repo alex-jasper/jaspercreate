@@ -1,5 +1,5 @@
 function loadGalleryPage(pageName) {
-    const lightboxPages = ["graphic-experimentation","event-posters","music-cover-art"]; // Pages that open lightbox
+    const lightboxPages = ["graphic-experimentation", "event-posters", "music-cover-art"]; // Pages that open lightbox
 
     $.getJSON("page-config.json", function (pageConfig) {
         const galleryItems = pageConfig[pageName];
@@ -23,14 +23,17 @@ function loadGalleryPage(pageName) {
                     const imageUrl = generateImgixUrl(
                         project.projectName,
                         asset.image,
-                        lightboxPages.includes(pageName) ? null : 800 // Use 800px for gallery, max width for lightbox
+                        800 // Medium for gallery view
                     );
 
-                    // Determine if the image should open a lightbox or load a project
-                    const isLightbox = lightboxPages.includes(pageName);
-                    const linkHtml = isLightbox
-                        ? `<a href="${imageUrl}" class="lightbox"><img src="${imageUrl}" alt="${asset.altText}" class="dynamic-image gallery-image" /></a>`
-                        : `<a href="javascript:void(0);" class="project-link" data-project-name="${project.projectName}"><img src="${imageUrl}" alt="${asset.altText}" class="dynamic-image gallery-image" /></a>`;
+                    // Simplified: All images open in lightbox by default
+                    const linkHtml = project.featured
+                        ? `<a href="javascript:void(0);" class="project-link" data-project-name="${project.projectName}">
+                            <img src="${imageUrl}" alt="${asset.altText}" class="dynamic-image gallery-image" />
+                        </a>`
+                        : `<a href="${generateImgixUrl(project.projectName, asset.image)}" class="lightbox">
+                            <img src="${imageUrl}" alt="${asset.altText}" class="dynamic-image gallery-image" />
+                        </a>`;
 
                     content += `
                         <div class="gallery-item">
@@ -42,7 +45,7 @@ function loadGalleryPage(pageName) {
             content += '</div>';
             $('.content').html(content);
 
-            // Initialize lightbox if required
+            // Initialize lightbox for all images
             if (lightboxPages.includes(pageName) && typeof initLightbox === 'function') {
                 initLightbox();
             }

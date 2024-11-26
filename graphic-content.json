@@ -52,7 +52,8 @@
                 "description": "Banner for Absolutely Livid Fest, extending the main poster’s psychedelic theme with a wide layout, featuring the iconic skull and tentacles against a vibrant background.",
                 "altText": "Absolutely Livid Fest banner with a skull and tentacles, extending the festival's psychedelic theme in a wide layout."
             }
-        ]
+        ],
+        "featured": false
     },
 
     {

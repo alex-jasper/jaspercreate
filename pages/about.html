@@ -1,142 +1,71 @@
 <div class="about-container">
-    <!-- Left Column with Profile Image -->
-    <div class="left-column">
-      <img src="img/me.jpg" alt="Profile photo of Alexander" class="profile-img">
-    </div>
-  
-    <!-- Right Column with Bio and Other Sections -->
-    <div class="right-column">
-      <!-- Bio Section -->
-      <div class="bio-section">
-        <h1>About Me</h1>
-        <p>Hello, I'm Alexander 👋</p>
-        <br>
-        <p>I'm a Branding Strategist and Graphic Designer based in Perth, Western Australia. I work at Golden Hotels - my families hospitality business that own and operates wedding venues, pubs and motels. It's my responsibilty to manage each venues branding, create and maintain their websites, and handle various design aspects for digital and print. I also contribute to social media campaigns across the venues, ensuring a cohesive visual identity across platforms.</p>
-      </div>
-  
-      <!-- Middle Section with Qualifications and Education -->
-      <div class="middle-section">
-        <div class="column">
-          <h2>Qualifications & Certifications</h2>
-          <ul>
-            <li>Diploma in Graphic Design - 2023</li>
-            <li>Certificate IV in Graphic Design - 2022</li>
-            <li>Adobe Certified 2022</li>
-                <ul id="sublist">
-                    <li>Graphic Design</li>
-                    <li>Graphic Design & Illustration using Adobe Illustrator</li>
-                    <li>Visual Design using Adobe Photoshop</li>
-                </ul>
-              <li>High School Diploma [Trinity College East Perth] (2018)</li>
-              <li>CERT IV Business [FEC] (2018)</li>
-          </ul>
-        </div>
-  
-        <div>
-          <h2>Work Experience</h2>
-          <p>(2024 - Current) Branding & Graphic Design at Golden Hotels</p>
-          <p>(2022 - Current) Freelance Designer for Jasper.Create</p>
-        </div>
-      </div>
-  
-      <!-- Work Experience Section -->
-      
-
-      <!-- Skills Section -->
-      <div class="skills-section">
-        <h2>Skills</h2>
-        <ul>
-          <li><b>Brand & Advertising Design</b>: Expert in creating cohesive, multi-platform campaigns to boost brand visibility and engagement.</li>
-          <li><b>Automated Integrations</b>: Developed seamless event import systems using Python and API integrations, ensuring real-time updates.</li>
-          <li><b>Advanced Web Components</b>: Built custom interactive elements for Squarespace, enhancing functionality and user experience.</li>
-          <li><b>Strategic Social Media Management</b>: Led targeted campaigns across platforms, driving audience engagement and brand growth.</li>
-          <li><b>Portfolio Development</b>: Created advanced web portfolios showcasing dynamic content and custom search functionality.</li>
-          <li><b>Photography & Visual Coordination</b>: Organised and directed professional photoshoots, capturing brand-aligned content.</li>
-          <li><b>Cross-Functional Collaboration</b>: Strong team communicator, promoting effective teamwork across venues and departments.</li>
-          <li><b>Feedback & Skill Development</b>: Skilled in both giving and incorporating feedback to continuously refine work quality.</li>
-        </ul>
-      </div>
-
-      <!-- Personal Projects Section -->
-      <div>
-        <h2>Personal Projects</h2>
-        <p>Cosmic Drift Theory - Music Project</p>
-        <p>Astro - Unity2d Game</p>
-      </div>
-    </div>
+    <h1>Loading...</h1>
+    <!-- Placeholder content to be dynamically populated -->
 </div>
 
-<style>
-  /* Main container for the entire layout */
-  .about-container {
-    display: flex;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    gap: 20px;
-  }
+<script>
+  // Dynamically load resume.json and populate the about-container
+  $.getJSON('/json/resume.json', function (data) {
+      // Build dynamic content for the About page
+      let aboutContent = `
+          <div class="left-column">
+              <img src="${data.profileImage || 'default-profile.png'}" alt="Profile photo of ${data.name}" class="profile-img">
+          </div>
 
-  /* Left Column styling for Profile Image */
-  .left-column {
-    flex: 0 0 200px;
-  }
+          <div class="right-column">
+              <!-- About Me Section -->
+              <div class="bio-section">
+                  <h1>About Me</h1>
+                  <p>Hello, I'm <strong>${data.name}</strong> 👋</p>
+                  <p>${data.summary}</p>
+              </div>
 
-  .profile-img {
-    width: 100%;
-    border-radius: 50%;
-  }
+              <!-- Qualifications & Certifications -->
+              <div class="middle-section">
+                  <h2>Qualifications & Certifications</h2>
+                  <ul>
+                      ${data.education.map(edu => `
+                          <li>
+                              <strong>${edu.degree}</strong> - ${edu.institution} (${edu.graduation_year})
+                          </li>`).join('')}
+                  </ul>
+              </div>
 
-  /* Right Column styling */
-  .right-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+              <!-- Work Experience -->
+              <div>
+                  <h2>Work Experience</h2>
+                  ${data.experience.map(exp => `
+                      <div class="experience-item">
+                          <p><strong>${exp.role}</strong> at ${exp.company || 'Freelance'} (${exp.start_date} - ${exp.end_date || 'Present'})</p>
+                          <ul>
+                              ${exp.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                          </ul>
+                      </div>`).join('')}
+              </div>
 
-  /* Bio section styling */
-  .bio-section {
-    margin-bottom: 20px;
-    max-width: 80%;
-  }
+              <!-- Skills -->
+              <div class="skills-section">
+                  <h2>Skills</h2>
+                  <ul>
+                      <li><b>Design Tools:</b> ${data.skills.design_tools.join(', ')}</li>
+                      <li><b>Web Design:</b> ${data.skills.web_design.join(', ')}</li>
+                      <li><b>Other Skills:</b> ${data.skills.other_skills.join(', ')}</li>
+                      <li><b>Soft Skills:</b> ${data.skills.soft_skills.join(', ')}</li>
+                  </ul>
+              </div>
 
-  /* Middle section styling for Qualifications and Education */
-  .middle-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
+              <!-- Personal Projects -->
+              <div>
+                  <h2>Personal Projects</h2>
+                  <p>${data.personalProjects ? data.personalProjects.join(', ') : 'No personal projects listed.'}</p>
+              </div>
+          </div>
+      `;
 
-  /* Column styling for Qualifications and Education */
-  .column {
-    width: 48%;
-  }
-
-  /* Title and content spacing */
-  .content h1, h2 {
-    margin-bottom: 10px;
-  }
-  .content p, ul {
-    margin-top: 0;
-  }
-
-  /* Skills section styling */
-  .skills-section {
-    margin-top: 20px;
-  }
-  
-  /* Remove bullet points from list */
-  .skills-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .skills-section ul li {
-    margin-bottom: 10px;
-  }
-
-  #sublist ul {
-    margin-left: 5px;
-  }
-
-</style>
+      // Inject content into the about-container
+      $('.about-container').html(aboutContent);
+  }).fail(function () {
+      console.error('Error loading resume.json.');
+      $('.about-container').html('<p>Error loading content. Please try again later.</p>');
+  });
+</script>

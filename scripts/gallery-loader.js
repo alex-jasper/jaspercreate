@@ -1,7 +1,7 @@
 function loadGalleryPage(pageName) {
     const lightboxPages = ["graphic-experimentation", "event-posters", "music-cover-art"]; // Pages that open lightbox
 
-    $.getJSON("page-config.json", function (pageConfig) {
+    $.getJSON("/json/page-config.json", function (pageConfig) {
         const galleryItems = pageConfig[pageName];
 
         if (!galleryItems) {
@@ -10,7 +10,7 @@ function loadGalleryPage(pageName) {
             return;
         }
 
-        $.getJSON("graphic-content.json", function (graphicContent) {
+        $.getJSON("/json/graphic-content.json", function (graphicContent) {
             let content = '<div class="gallery">';
 
             galleryItems.forEach((mapping) => {
@@ -76,7 +76,7 @@ function loadProject(projectName) {
 }
 
 function loadProjectContent(projectName) {
-    $.getJSON("graphic-content.json", function (graphicContent) {
+    $.getJSON("/json/graphic-content.json", function (graphicContent) {
         const project = graphicContent.find(c => c.projectName === projectName);
 
         if (project) {

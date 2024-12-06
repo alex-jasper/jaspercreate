@@ -1,0 +1,82 @@
+{
+    "name": "Alexander Jasper",
+    "contact": {
+      "email": "apjasper@gmail.com",
+      "phone": "Your Phone Number",
+      "portfolio": "https://jasper-create.com",
+      "linkedin": "https://linkedin.com/in/alexander-jasper"
+    },
+    "summary": "Creative and detail-oriented graphic designer with over 3 years of experience in web design, branding, and digital marketing. Adept at delivering responsive designs, improving UX, and implementing SEO strategies to boost brand visibility. Seeking to leverage my skills in a collaborative environment to create impactful visual solutions.",
+    "skills": {
+      "design_tools": [
+        "Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+        "Canva"
+      ],
+      "web_design": [
+        "Squarespace",
+        "HTML/CSS",
+        "Responsive Design",
+        "UI/UX principles"
+      ],
+      "other_skills": [
+        "SEO",
+        "Google Analytics",
+        "JSON-LD",
+        "Structured Data"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Attention to Detail",
+        "Client Communication",
+        "Team Collaboration"
+      ]
+    },
+    "experience": [
+      {
+        "role": "Visual Designer & Branding Specialist",
+        "company": "Golden Hotels Pty Ltd",
+        "location": "Perth, WA",
+        "start_date": "2022-05",
+        "end_date": "Present",
+        "responsibilities": [
+          "Redesigned and optimized 4+ websites (Ambrose Estate, Mt Henry Tavern, Swan View Tavern, and 300 Acres Restaurant), aligning them with brand identity and improving user experience.",
+          "Enhanced SEO performance by implementing structured data (JSON-LD), alt text, and responsive design, leading to improved visibility in search results.",
+          "Developed and launched promotional materials (posters, banners, and social media assets) for events and campaigns.",
+          "Worked closely with venue managers to identify goals, execute marketing strategies, and track performance using analytics tools.",
+          "Reduced page loading time by X% through optimized design and coding."
+        ]
+      },
+      {
+        "role": "Freelance Graphic Designer",
+        "location": "Remote",
+        "start_date": "2023-10",
+        "end_date": "Present",
+        "responsibilities": [
+          "Designed custom logos, posters, and digital assets for small businesses, focusing on creating unique brand identities.",
+          "Worked with clients to deliver projects on tight deadlines while maintaining quality and creativity."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Diploma of Graphic Design",
+        "institution": "SAE Perth",
+        "graduation_year": "2024"
+      },
+      {
+        "degree": "CERT IV Graphic Design",
+        "institution": "North Metro Tafe",
+        "graduation_year": "2023"
+      },
+      {
+        "degree": "High School Diploma",
+        "institution": "Trinity College East Perth",
+        "graduation_year": "2018"
+      },
+      {
+        "degree": "CERT IV Business",
+        "institution": "FEC",
+        "graduation_year": "2018"
+      }
+    ]
+  }

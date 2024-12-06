@@ -7,7 +7,8 @@
     --secondary-color: rgb(42, 45, 65);
 	--white-color: rgb(248, 244, 239);
 	--black-color: rgb(42, 45, 65);
-    --font-family-main: "coolvetica", sans-serif;
+    --font-family-head: "coolvetica", sans-serif;
+    --font-family-para: "Arial", serif;
     --font-weight-book: 400;
     --font-weight-regular: 500;
 	--font-weight-bold: 700;
@@ -27,27 +28,20 @@
     cursor:url(http://jasper-create.com/img/cursor.png), auto;
 }
 
-html {
-    font-family: var(--font-family-main);
-    
-}
-
 body {
     background-color: lightblue;  
+    font-family: var(--font-family-para); /* Ensures all body text defaults to Arial */
 }
 
 body h1, h2, h3, h4 {
+    font-family: var(--font-family-head);
     font-weight: var(--font-weight-bold);
     letter-spacing: var(--letter-spacing-bold);
     color: var(--black-color);
 }
 
-a {
-	font-weight: var(--font-weight-book);
-    letter-spacing: var(--letter-spacing-book);
-}
-
-body p, p1, p2, p3, p4 {
+body a, p, span, li, ul, ol {
+    font-family: var(--font-family-para);
 	font-weight: var(--font-weight-book);
     letter-spacing: var(--letter-spacing-book);
     color: var(--black-color);

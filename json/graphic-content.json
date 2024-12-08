@@ -547,7 +547,7 @@
         "id": 24,
         "projectName": "graphic-experimentation",
         "title": "Graphic Experimentation",
-        "client": "Person Project",
+        "client": "Personal Project",
         "description": "Test.",
         "assets": [
             {
@@ -568,6 +568,35 @@
             {
                 "assetTitle": "Image 4",
                 "image": "4.jpg",
+                "description": "Test."
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "projectName": "punkmas-24",
+        "title": "Punkmas 2024",
+        "client": "Rust Artist Management",
+        "description": "Test.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 2",
+                "image": "banner.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 3",
+                "image": "story.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 4",
+                "image": "square.jpg",
                 "description": "Test."
             }
         ]

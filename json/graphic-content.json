@@ -629,5 +629,44 @@
                 "description": "Test."
             }
         ]
+    },
+    {
+        "id": 27,
+        "projectName": "live-takes-summer-series",
+        "title": "Live Takes - Summer Gig Series",
+        "client": "BASEMGMT",
+        "description": "Test.",
+        "assets": [
+            {
+                "assetTitle": "Image 1",
+                "image": "poster1.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 1",
+                "image": "poster2.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 2",
+                "image": "banner.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 3",
+                "image": "story.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 4",
+                "image": "square1.jpg",
+                "description": "Test."
+            },
+            {
+                "assetTitle": "Image 4",
+                "image": "square2.jpg",
+                "description": "Test."
+            }
+        ]
     }
 ]
